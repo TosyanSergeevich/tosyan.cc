@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Крепость Тосьяна</title>
+<style>
+:root {
+  --bg:#0c110f; --panel:#121a16; --line:#26332c; --ink:#e8e2d3;
+  --muted:#b2aa96; --gold:#d99a4e; --teal:#57a184; --deep:#0a0f0d;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+  background:radial-gradient(1100px 480px at 12% -10%, #1d3a2f 0%, transparent 60%),
+             radial-gradient(800px 400px at 95% 0%, #35251390 0%, transparent 55%), var(--deep);
+  color:var(--ink); font:16px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing:antialiased; text-align:center; padding:32px;
+}
+.kicker { font-size:12px; letter-spacing:.32em; text-transform:uppercase; color:var(--gold); }
+h1 { font-family:Georgia, "Times New Roman", serif; font-weight:normal;
+  font-size:clamp(30px, 6vw, 52px); margin:14px 0 10px; }
+h1 em { font-style:italic; color:var(--gold); }
+.sub { max-width:520px; margin:0 auto; color:#c9c2b1; }
+.card { display:block; max-width:420px; margin:34px auto 0; padding:18px 22px;
+  background:var(--panel); border:1px solid var(--line); border-top:2px solid var(--teal);
+  border-radius:10px; color:var(--ink); text-decoration:none; transition:border-color .2s; }
+.card:hover { border-color:var(--teal); }
+.card b { display:block; font-size:16px; }
+.card span { font-size:13.5px; color:var(--muted); }
+.foot { margin-top:40px; font-size:12.5px; color:var(--muted); }
+</style>
+</head>
+<body>
+  <div>
+    <div class="kicker">tosyan.cc</div>
+    <h1>Крепость <em>Тосьяна</em></h1>
+    <p class="sub">Домен для прикольных страничек. Пока жильцов немного, но крепость строится.</p>
+    <a class="card" href="/wow/">
+      <b>WoW Forever · маршрут 24 → 60</b>
+      <span>все подземелья с квестами Орды, в порядке прохождения</span>
+    </a>
+    <p class="foot">Хостинг: GitHub Pages</p>
+  </div>
+</body>
+</html>
